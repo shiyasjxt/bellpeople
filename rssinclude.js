@@ -21,6 +21,11 @@
 			success: function(xml){
 				
 				var i = 0;
+
+				//only if job rss feed	
+				if( options.baseParams.rssURL.indexOf('job/') > -1 ){
+					jQuery(xml).find("refinelist").remove();
+				}
 			
 				jQuery(xml).find("item").each(function(){
 					
