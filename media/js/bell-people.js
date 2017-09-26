@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     //Main slider
-    // $('#mainSlider').jqFancyTransitions({ width: 1000, height: 300, strips: 20, direction: 'fountain', position: 'top' });
+    $('#mainSlider').jqFancyTransitions({ width: 1000, height: 300, strips: 20, direction: 'fountain', position: 'top' });
 
     //scrolling jobs 
     $("#latestJobs").rssInclude({
